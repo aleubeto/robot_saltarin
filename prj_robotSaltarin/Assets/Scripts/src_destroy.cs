@@ -18,7 +18,7 @@ public class src_destroy : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        myPlat = (GameObject)Instantiate(platformPrefab, new Vector2(Random.Range(-5f, 5f), player.transform.position.y + (14 * Random.Range(0.5f, 1f))), Quaternion.identity);
+        myPlat = (GameObject)Instantiate(platformPrefab, new Vector2(Random.Range(-5f, 5f), player.transform.position.y + (12 * Random.Range(0.5f, 0.7f))), Quaternion.identity);
         Destroy(collision.gameObject);
     }
 }
