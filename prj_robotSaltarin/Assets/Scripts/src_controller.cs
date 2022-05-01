@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class src_controller : MonoBehaviour
 {
+    public Text txt_score;
     private Rigidbody2D rb2d;
     private float moveInput;
     private float speed = 10f;
