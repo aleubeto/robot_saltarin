@@ -19,7 +19,6 @@ public class src_bounce : MonoBehaviour
     {
         if(breakable)
         {
-            Debug.Log("BREAK!!!");
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
         else
