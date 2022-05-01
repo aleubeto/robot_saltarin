@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class src_bounce : MonoBehaviour
 {
+    public float bouncy = 600f;
+    public bool breakable = false;
     void Start()
     {
     // Start is called before the first frame update
@@ -16,7 +18,7 @@ public class src_bounce : MonoBehaviour
     {
         if(collision.gameObject.GetComponent<Rigidbody2D>().velocity.y <= 0)
         {
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector3.up * 600f);
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector3.up * bouncy);
         }
     }
 }
