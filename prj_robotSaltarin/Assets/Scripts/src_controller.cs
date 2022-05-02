@@ -24,7 +24,17 @@ public class src_controller : MonoBehaviour
     }
     void FixedUpdate()
     {
+        Vector3 characterScale = transform.localScale;
         moveInput = Input.GetAxis("Horizontal");
         rb2d.velocity = new Vector2(moveInput * speed, rb2d.velocity.y);
+        if (moveInput < 0)
+        {
+            characterScale.x = 1;
+        }
+        else if (moveInput > 0)
+        {
+            characterScale.x = -1;
+        }
+        transform.localScale = characterScale;
     }
 }
