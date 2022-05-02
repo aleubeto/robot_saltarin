@@ -27,33 +27,33 @@ public class src_proceduralGen : MonoBehaviour
             if (probability == 1)
             {
                 Destroy(collision.gameObject);
-                Instantiate(springPrefab, new Vector2(Random.Range(-5f, 5f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f))), Quaternion.identity);
+                Instantiate(springPrefab, new Vector2(Random.Range(-8f, 8f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f))), Quaternion.identity);
             }
             else if (probability == 2)
             {
                 Destroy(collision.gameObject);
-                Instantiate(breakablePrefab, new Vector2(Random.Range(-5f, 5f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f))), Quaternion.identity);
+                Instantiate(breakablePrefab, new Vector2(Random.Range(-8f, 8f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f))), Quaternion.identity);
             }
             else
             {
-                collision.gameObject.transform.position = new Vector2(Random.Range(-5f, 5f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f)));
+                collision.gameObject.transform.position = new Vector2(Random.Range(-8f, 8f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f)));
             }
         }
         else if(collision.gameObject.name.StartsWith("obj_platform2"))
         {
             if (probability == 1)
             {
-                collision.gameObject.transform.position = new Vector2(Random.Range(-5f, 5f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f)));
+                collision.gameObject.transform.position = new Vector2(Random.Range(-8f, 8f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f)));
             }
             else if (probability == 2)
             {
                 Destroy(collision.gameObject);
-                Instantiate(breakablePrefab, new Vector2(Random.Range(-5f, 5f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f))), Quaternion.identity);
+                Instantiate(breakablePrefab, new Vector2(Random.Range(-8f, 8f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f))), Quaternion.identity);
             }
             else
             {
                 Destroy(collision.gameObject);
-                Instantiate(platformPrefab, new Vector2(Random.Range(-5f, 5f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f))), Quaternion.identity);
+                Instantiate(platformPrefab, new Vector2(Random.Range(-8f, 8f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f))), Quaternion.identity);
             }
         }
         else if(collision.gameObject.name.StartsWith("obj_platform3"))
@@ -61,16 +61,16 @@ public class src_proceduralGen : MonoBehaviour
             if (probability == 1)
             {
                 Destroy(collision.gameObject);
-                Instantiate(springPrefab, new Vector2(Random.Range(-5f, 5f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f))), Quaternion.identity);
+                Instantiate(springPrefab, new Vector2(Random.Range(-8f, 8f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f))), Quaternion.identity);
             }
             else if (probability == 2)
             {
-                collision.gameObject.transform.position = new Vector2(Random.Range(-5f, 5f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f)));
+                collision.gameObject.transform.position = new Vector2(Random.Range(-8f, 8f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f)));
             }
             else
             {
                 Destroy(collision.gameObject);
-                Instantiate(platformPrefab, new Vector2(Random.Range(-5f, 5f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f))), Quaternion.identity);
+                Instantiate(platformPrefab, new Vector2(Random.Range(-8f, 8f), player.transform.position.y + (10 * Random.Range(0.5f, 0.7f))), Quaternion.identity);
             }
         }
 
